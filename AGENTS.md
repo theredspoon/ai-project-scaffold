@@ -2,6 +2,7 @@
 
 > This file is the single source of truth for this project.
 > `CLAUDE.md` and all tool-specific instruction files redirect here.
+> Also read `CONVENTIONS.md` — universal style, git, and toolchain conventions.
 
 [One sentence: what this project is and what it does.]
 
@@ -50,7 +51,9 @@ Never:
 
 ## Conventions
 
-- [Naming conventions, file organization, code style.]
+See `CONVENTIONS.md` for universal style, git, and toolchain conventions.
+
+- [Project-specific naming conventions, file organization.]
 
 ---
 

@@ -7,9 +7,10 @@ The canonical starting point for AI-assisted projects. Provides the instruction 
 | File | Purpose |
 | --- | --- |
 | `AGENTS.md` | Fill in with project-specific content — this is the single source of truth |
+| `CONVENTIONS.md` | Universal style, git, and toolchain conventions — read by all agents via `AGENTS.md` |
 | `CONTEXT.md` | Optional deep-background companion (domain knowledge, rationale, history) |
 | `TASKS.md` | Task tracking template — clear the phases, keep the permanent sections |
-| `CLAUDE.md` | Adapter for Claude Code — imports `AGENTS.md` |
+| `CLAUDE.md` | Adapter for Claude Code — imports `AGENTS.md` and `CONVENTIONS.md` |
 | `.github/copilot-instructions.md` | Adapter for GitHub Copilot — kept alongside `AGENTS.md` because Copilot Code Review doesn't read `AGENTS.md` yet |
 | `.cursor/rules/project.mdc` | Adapter for Cursor (always-on rule) |
 | `.windsurfrules` | Adapter for Windsurf |

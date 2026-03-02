@@ -1,3 +1,3 @@
 # Copilot Instructions
 
-Read `AGENTS.md` before beginning any task. Treat it as binding constraints.
+Read `AGENTS.md` and `CONVENTIONS.md` before beginning any task. Treat `AGENTS.md` as binding constraints.

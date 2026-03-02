@@ -9,6 +9,7 @@ The canonical starting point for AI-assisted projects. Provides the instruction 
 | `AGENTS.md` | Fill in with project-specific content — this is the single source of truth |
 | `CONVENTIONS.md` | Universal style, git, and toolchain conventions — read by all agents via `AGENTS.md` |
 | `CONTEXT.md` | Optional deep-background companion (domain knowledge, rationale, history) |
+| `STATUS.md` | Session state — current focus, last session summary, next steps. Update at session end. |
 | `TASKS.md` | Task tracking template — clear the phases, keep the permanent sections |
 | `CLAUDE.md` | Adapter for Claude Code — imports `AGENTS.md` and `CONVENTIONS.md` |
 | `.github/copilot-instructions.md` | Adapter for GitHub Copilot — kept alongside `AGENTS.md` because Copilot Code Review doesn't read `AGENTS.md` yet |
@@ -30,3 +31,8 @@ The canonical starting point for AI-assisted projects. Provides the instruction 
 ## Improving a pattern
 
 Update this repo first, then propagate to active projects manually. Keeping this repo current is what makes new projects better than the last.
+
+## Not yet included
+
+- `AGENTS.override.md` support — Codex allows personal per-repo overrides via this file (parallel to `CLAUDE.local.md`). Pre-gitignored here; no template provided yet.
+- Migration guide for existing projects using the old `CONTEXT.md`-as-canonical pattern.

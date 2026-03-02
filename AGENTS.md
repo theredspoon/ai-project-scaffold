@@ -35,7 +35,7 @@ Never:
 
 ---
 
-## Commands
+## Commands *(code projects — remove for ops, docs, or business projects)*
 
 - Build: `[command]`
 - Test: `[command]`
@@ -43,7 +43,7 @@ Never:
 
 ---
 
-## Doc Type Responsibilities
+## Doc Type Responsibilities *(document-heavy projects — remove otherwise)*
 
 [Define the document types used in this project and when each is updated.]
 

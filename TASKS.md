@@ -43,6 +43,5 @@ AI behaviors to activate or deactivate once a condition is met.
 
 Run after any project completes its final validation phase:
 
-1. Update Project Registry in `CONTEXT.md` (advance Phase column).
-2. Remove all completed phases from `TASKS.md`.
-3. If no next project is queued, leave `TASKS.md` with only the structural sections intact.
+1. Remove all completed phases from `TASKS.md`.
+2. If no follow-on work is queued, leave `TASKS.md` with only the structural sections intact.

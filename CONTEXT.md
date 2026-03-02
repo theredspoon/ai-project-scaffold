@@ -32,16 +32,6 @@ Never:
 
 ---
 
-## Project Registry
-
-| Project | Status | Phase | Primary Runbook | Primary Logbook |
-| --- | --- | --- | --- | --- |
-| | | | | |
-
-Phase key: `Discovery` → `Buildout` → `Operate` → `Retired`
-
----
-
 ## Conventions
 
 - [Naming conventions, file organization, etc.]

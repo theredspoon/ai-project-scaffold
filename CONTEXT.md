@@ -3,15 +3,13 @@
 > This file is the single source of truth for this project.
 > `AGENTS.md`, `CLAUDE.md`, and all tool-specific instruction files redirect here.
 
-This repository is the canonical template for AI-assisted projects. Copy its files when starting a new project to get AI instruction scaffolding, multi-tool adapters, and task tracking conventions pre-wired.
+[One sentence: what this project is and what it does.]
 
 ---
 
 ## Constraints (CRITICAL)
 
-- This repo contains templates only. Do not add project-specific work here.
-- Changes here affect all future projects started from this scaffold — edit with that in mind.
-- Substantive rules belong in `CONTEXT.md` only. Adapter files stay thin.
+- [Binding constraints the AI must not violate.]
 
 ---
 
@@ -19,37 +17,40 @@ This repository is the canonical template for AI-assisted projects. Copy its fil
 
 Always:
 
-- Keep template files project-agnostic.
-- Preserve the adapter pattern: every tool-specific instruction file redirects to `CONTEXT.md`.
 - Confirm before any destructive or irreversible action.
+- [Add always-do rules.]
 
 Never:
 
-- Add project-specific tasks, environment details, or credentials to this repo.
-- Duplicate rules across adapter files. One source, many pointers.
+- [Add never-do rules.]
 
 ---
 
 ## Doc Type Responsibilities
 
-**CONTEXT.md** — single source of truth for a project. Defines what the project is, its constraints, boundaries, and conventions. All AI tool files redirect here.
+[Define the document types used in this project and when each is updated.]
 
-**TASKS.md** — active and deferred work tracking. Completed tasks are removed when done. Structural `[PERMANENT]` sections are never removed.
+---
+
+## Project Registry
+
+| Project | Status | Phase | Primary Runbook | Primary Logbook |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+Phase key: `Discovery` → `Buildout` → `Operate` → `Retired`
 
 ---
 
 ## Conventions
 
-- **Starting a new project:** Copy all files to the new project root. Fill in `CONTEXT.md` with project-specific content. Adapter files require no changes.
-- **Improving a pattern:** Update this repo first, then propagate to active projects manually.
-- **Logbooks and runbooks:** Add them if the project warrants it. See `docfiles-private` for reference templates.
+- [Naming conventions, file organization, etc.]
 
 ---
 
 ## Non-Goals
 
-- Not a code scaffold. Instruction files only.
-- Not tool-specific. All substantive rules live in `CONTEXT.md`; adapters contain no independent content.
+- [What this project explicitly does not do.]
 
 ---
 
@@ -57,4 +58,4 @@ Never:
 
 | Resource | Purpose |
 | --- | --- |
-| [docfiles-private](../docfiles-private) | Infrastructure project using this pattern — reference implementation |
+| | |

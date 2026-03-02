@@ -1,51 +1,29 @@
 # Context
 
-> This file is the single source of truth for this project.
-> `AGENTS.md`, `CLAUDE.md`, and all tool-specific instruction files redirect here.
-
-[One sentence: what this project is and what it does.]
-
----
-
-## Constraints (CRITICAL)
-
-- [Binding constraints the AI must not violate.]
+> Optional deep-background companion to `AGENTS.md`.
+> Import in Claude Code sessions with `@CONTEXT.md` when domain depth is needed.
+> Contains background knowledge, rationale, and history — not rules or constraints.
 
 ---
 
-## Boundaries
+## Background
 
-Always:
-
-- Confirm before any destructive or irreversible action.
-- [Add always-do rules.]
-
-Never:
-
-- [Add never-do rules.]
+[Why this project exists. What problem it solves. Domain context an AI needs to work effectively here.]
 
 ---
 
-## Doc Type Responsibilities
+## Key Decisions
 
-[Define the document types used in this project and when each is updated.]
-
----
-
-## Conventions
-
-- [Naming conventions, file organization, etc.]
+[Why the architecture or approach is what it is. What was considered and why alternatives were rejected.]
 
 ---
 
-## Non-Goals
+## Glossary
 
-- [What this project explicitly does not do.]
+[Project-specific terms and what they mean.]
 
 ---
 
-## External References
+## History
 
-| Resource | Purpose |
-| --- | --- |
-| | |
+[How the project got here. Relevant context about past states or major pivots.]

@@ -2,8 +2,8 @@
 
 ## Execution Instructions
 
-1. Read `CONTEXT.md` first.
-2. Treat `CONTEXT.md` as binding constraints.
+1. Read `AGENTS.md` first. Treat it as binding constraints.
+2. Check this file for the current active phase, deferred items, open questions, and assumptions.
 3. Work only within the scope defined in the active project.
 4. When a task is completed, remove it from its phase and record it in the appropriate log.
 5. Do not remove sections marked `[PERMANENT]`.
@@ -35,6 +35,24 @@ Decisions not blocking active work. Review at the start of each new phase.
 AI behaviors to activate or deactivate once a condition is met.
 
 | Behavior | Condition | Status |
+| --- | --- | --- |
+
+---
+
+## Open Questions `[PERMANENT]`
+
+Things that need investigation before they can become decisions.
+
+| Question | Why It Matters | Owner |
+| --- | --- | --- |
+
+---
+
+## Assumptions `[PERMANENT]`
+
+Believed to be true but not yet validated. Track to avoid silent drift.
+
+| Assumption | Impact if Wrong | Validate By |
 | --- | --- | --- |
 
 ---

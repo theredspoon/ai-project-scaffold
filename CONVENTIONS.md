@@ -6,11 +6,9 @@ Universal conventions for this project. Apply to all content generated, regardle
 
 ## Markdown
 
-**Fenced code blocks:** Always specify a language. Never leave a fence untagged.
+The lint-enforceable markdown rules for this repository live in `.markdownlint.jsonc`. Keep that file aligned with this section.
 
-- Use the actual language for code: `python`, `bash`, `typescript`, `json`, `yaml`, `sql`, `css`, `html`, etc.
-- Use `text` for directory trees, file paths, terminal output, plain prose, and anything that isn't a recognized format.
-- When in doubt, `text` is always valid.
+**Fenced code blocks:** Use `text` for directory trees, file paths, terminal output, plain prose, and anything that isn't a recognized format. When in doubt, `text` is always valid.
 
 **Tables:** Compact style — single space padding inside each cell, leading and trailing pipes.
 
@@ -25,6 +23,37 @@ Never use aligned style (padding cells to align columns) or tight style (no spac
 **Blockquotes:** Prefix every line with `>`, including blank lines between paragraphs or speaker turns.
 
 **Headings vs. emphasis:** Never use bold or italic on a line by itself as a substitute for a heading. Use `##`, `###`, etc. for section titles. Bold and italic are for inline emphasis only.
+
+---
+
+## Prose
+
+**Punctuation:**
+
+- Avoid em dashes. Use a colon, comma, or period instead.
+- Use the Oxford comma.
+- Reserve ellipsis for genuine omission or trailing-off; not as a stylistic pause.
+
+**Word choice:**
+
+- Prefer "use" over "utilize."
+- Avoid hedges: *very, quite, somewhat, basically, essentially.*
+- Cut filler constructions: "in order to" → "to"; "at this point in time" → "now."
+- Prefer verbs over nominalizations: "decide" not "make a decision."
+
+**Voice and tense:**
+
+- Active voice by default. Passive only when the agent is genuinely unknown or irrelevant.
+- Present tense for documentation and instructions.
+
+**Structure:**
+
+- Front-load the point. Don't build to it.
+- One idea per sentence in instructional or reference writing.
+
+**Capitalization:**
+
+- Sentence case for headings, unless the project has an established pattern.
 
 ---
 

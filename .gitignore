@@ -2,5 +2,14 @@
 CLAUDE.local.md
 .claude/settings.local.json
 
-# Personal overrides for other agents (Codex AGENTS.override.md support — not yet in scaffold)
+# Personal overrides for other agents
 AGENTS.override.md
+
+# Local tracker workflow state
+TASKS.md
+PHASE_INBOX.md
+MILESTONES.md
+CONTEXT.md
+
+# Local dependency install artifacts
+node_modules/

@@ -1,6 +1,6 @@
 # Context
 
-> Optional deep-background companion to `AGENTS.md`.
+> Deep-background companion to `AGENTS.md`.
 > Import in Claude Code sessions with `@CONTEXT.md` when domain depth is needed.
 > Contains background knowledge, rationale, and history — not rules or constraints.
 

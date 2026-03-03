@@ -3,12 +3,11 @@
 ## Execution Instructions
 
 1. ALWAYS read `AGENTS.md` first. Treat it as binding constraints.
-2. Read `STATUS.md` if it exists — it reflects current session state and immediate next steps.
-3. ALWAYS check this file for the current active phase, deferred items, open questions, and assumptions.
-4. ONLY work within the scope defined in the active project.
-5. ALWAYS remove a completed task from its phase and record it in the appropriate log.
-6. NEVER remove sections marked `[PERMANENT]`.
-7. ALWAYS provide a concise summary of changes made after completing a phase.
+2. ALWAYS check this file for the current active phase, deferred items, open questions, and assumptions.
+3. ONLY work within the scope defined in the active project.
+4. ALWAYS remove a completed task from its phase and record it in the appropriate log.
+5. NEVER remove sections marked `[PERMANENT]`.
+6. ALWAYS provide a concise summary of changes made after completing a phase.
 
 ---
 

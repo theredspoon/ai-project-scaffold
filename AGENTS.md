@@ -21,9 +21,9 @@ IMPORTANT: [The rule that must never be broken, stated explicitly.]
 Always:
 
 - Confirm before any destructive or irreversible action.
-- Before starting any substantive work, record it in `TASKS.md` as an active phase with what it delivers, the files or folders the phase is likely to affect, and the remaining items in `Tasks:`. In `Expected Touches:`, do not include tracking workflow files unless the work is modifying their expected behavior.
+- Use `TASKS.md` only to track work that changes maintained project assets, such as code, documentation, configuration, tests, rules, or workflow. Do not use it for operational steps or generated outputs unless those outputs are themselves maintained assets.
+- Before starting any non-trivial work that changes maintained project assets, record it in `TASKS.md` as an active phase with what it delivers, the files or folders the phase is likely to affect, and the remaining items in `Tasks:`. Minor isolated edits, such as one-off typo or formatting fixes, do not require a phase. In `Expected Touches:`, do not include tracking workflow files unless the work is modifying their expected behavior.
 - Mark a phase complete in `TASKS.md` before moving to the next task. Do not batch updates.
-- Do not track routine version-control or hosting operations in `TASKS.md` (for example: staging, committing, pushing, branching, creating PRs, or creating remotes) unless those operations are themselves the explicit deliverable of the current phase.
 - [Add always-do rules.]
 
 Never:
@@ -58,8 +58,6 @@ Stop at the first signal — you do not need to fully understand the scope befor
 The tracking workflow means routine maintenance of project-tracking files: updating active phases in `TASKS.md`, archiving completed phases into `PHASE_INBOX.md`, and consolidating history into `MILESTONES.md`.
 
 Changes made only to support that workflow should not be treated as file touches worth recording unless the work is also modifying the expected behavior of those files.
-
-The tracking workflow applies only to work on the project and its maintainable assets. Do not use it to track routine runtime outputs, generated deliverables, or pipeline artifacts produced by using the project unless the project explicitly treats those outputs as maintained source material.
 
 ---
 

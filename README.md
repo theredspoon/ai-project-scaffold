@@ -6,10 +6,10 @@ The canonical starting point for AI-assisted projects. Provides the instruction 
 
 ### Core project docs
 
+- `README.md`: Human-facing overview of what the project is, how to use it, and what the important top-level files are for.
 - `AGENTS.md`: Fill in with project-specific content. This is the single source of truth.
 - `CONVENTIONS.md`: Universal style, git, and toolchain conventions read by all agents via `AGENTS.md`.
 - `CONTEXT.example.md`: Tracked template for the deep-background companion. Copy to `CONTEXT.md` as the local durable-context file.
-- `README.md`: Human-facing overview of what the project is, how to use it, and what the important top-level files are for.
 
 ### Workflow tracking
 
@@ -44,8 +44,6 @@ The canonical starting point for AI-assisted projects. Provides the instruction 
 5. Use the live tracker files (`TASKS.md`, `PHASE_INBOX.md`, and `MILESTONES.md`) only for work that changes maintained project assets, such as code, documentation, configuration, tests, rules, or workflow. If entries remain unresolved after milestone review, leave them in `PHASE_INBOX.md` as orphan inbox entries and report them in the completion response until you explicitly defer, discard, merge, or promote them.
 
 The live tracker files (`TASKS.md`, `PHASE_INBOX.md`, and `MILESTONES.md`) and local `CONTEXT.md` are intentionally local working state. The tracked `*.example.md` files are the public templates.
-
-Use the live tracker files only for work on maintained project assets. Do not use them for operational steps or generated outputs unless those outputs are themselves maintained assets.
 
 ## Personal overrides
 

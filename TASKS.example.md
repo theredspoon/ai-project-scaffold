@@ -7,7 +7,7 @@
 1. ALWAYS read `AGENTS.md` first. Treat it as binding constraints.
 2. ALWAYS assess scope against the request before starting work. If initial assessment reveals the artifact is significantly larger, more broken, or more complex than the request implied — follow the Scope Escalation Protocol in `AGENTS.md` before doing anything else.
 3. ALWAYS check this file for the current active phase, deferred items, open questions, and assumptions.
-4. ALWAYS record any non-trivial work that changes maintained project assets in the active phase before starting it. Include what the phase delivers in `Delivers:`, the files or folders the phase is likely to affect in `Expected Touches:`, and the remaining task checklist in `Tasks:`. Minor isolated edits, such as one-off typo or formatting fixes, do not require a phase. Do not include tracking workflow files unless the work is modifying their expected behavior.
+4. ALWAYS record work that changes maintained project assets as a phase before starting it. See AGENTS.md Boundaries section for exemptions.
 
 ### During the Phase
 

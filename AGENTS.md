@@ -21,14 +21,14 @@ IMPORTANT: [The rule that must never be broken, stated explicitly.]
 Always:
 
 - Confirm before any destructive or irreversible action.
-- Use `TASKS.md` only to track work that changes maintained project assets, such as code, documentation, configuration, tests, rules, or workflow. Do not use it for operational steps or generated outputs unless those outputs are themselves maintained assets.
-- Before starting any non-trivial work that changes maintained project assets, record it in `TASKS.md` as an active phase with what it delivers, the files or folders the phase is likely to affect, and the remaining items in `Tasks:`. Minor isolated edits, such as one-off typo or formatting fixes, do not require a phase. In `Expected Touches:`, do not include tracking workflow files unless the work is modifying their expected behavior.
+- Read `TASKS.md` before starting any work and follow its execution instructions.
+- Create a phase using the phase template in `TASKS.md` before modifying any maintained project asset (code, documentation, configuration, tests, rules, or workflow), unless only fixing typos, indentation, or renaming without functional change. In `Expected Touches:`, do not include tracking workflow files unless modifying their expected behavior.
 - Mark each checklist item in `Tasks:` complete in `TASKS.md` immediately after completing it. Do not batch tracking updates. Once all items in a phase's `Tasks:` list are complete, treat the phase as complete.
 - [Add always-do rules.]
 
 Never:
 
-- [Add never-do rules.]
+- Treat bugfixes or behavior-changing edits as exempt from phase tracking.
 
 ---
 

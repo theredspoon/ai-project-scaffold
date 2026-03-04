@@ -12,18 +12,30 @@
 ### During the Phase
 
 1. ONLY work within the scope defined in the active project.
-2. NEVER remove sections marked `[PERMANENT]`.
+2. NEVER remove any part of a section marked [PERMANENT], including any nested subsections within it.
 3. ALWAYS mark completed items in `Tasks:` as complete. If the result creates durable rationale worth preserving, move that rationale to `CONTEXT.md`.
 4. ALWAYS track any non-trivial validation work required to satisfy the validation requirement in the active phase.
+5. ALWAYS check, before treating a phase as complete, whether the phase changed project purpose, setup, usage, workflow, or top-level structure. If so, update `README.md`.
 
 ### After Completing the Phase
 
-1. ALWAYS check, before marking a phase complete, whether the phase changed project purpose, setup, usage, workflow, or top-level structure. If so, update `README.md`.
-2. ALWAYS validate completed work at the appropriate level of abstraction for the type of change made, following the `Validation` guidance in `AGENTS.md`, and report the validation result in the completion response.
-3. ALWAYS assess, after the Wrap Protocol completes, whether the newly archived phase and any related entries in `PHASE_INBOX.md` should update `MILESTONES.md`, following the milestone guidance in `AGENTS.md`.
-4. ALWAYS remove `PHASE_INBOX.md` entries once they have been explicitly resolved.
-5. ALWAYS report orphan inbox entries in the completion response when one or more entries remain unresolved after milestone review, including the orphan count and available next actions: defer (leave them unresolved for now), discard, merge, or promote.
-6. ALWAYS provide a concise summary of changes made in the completion response after completing a phase.
+#### Before the Wrap Protocol
+
+1. ALWAYS validate completed work at the appropriate level of abstraction for the type of change made, following the `Validation` guidance in `AGENTS.md`, and report the validation result in the completion response.
+
+#### Wrap Protocol
+
+1. ALWAYS copy the completed phase to `PHASE_INBOX.md`, using the phase name as the heading, adding a `Completed:` date, and replacing `Expected Touches:` with `Actual Touches:` for the files or folders changed for reasons unrelated to the expected behavior of the tracking workflow.
+2. ALWAYS remove the completed phase from `TASKS.md`.
+3. ALWAYS ensure the next phase is present above `Phase Template` and keep working if more work remains.
+4. ALWAYS reset `TASKS.md` to its template state by keeping only sections marked `[PERMANENT]` and their nested subsections if no more work remains.
+
+#### After the Wrap Protocol
+
+1. ALWAYS assess whether the newly archived phase and any related entries in `PHASE_INBOX.md` should update `MILESTONES.md`, following the milestone guidance in `AGENTS.md`.
+2. ALWAYS remove `PHASE_INBOX.md` entries once they have been explicitly resolved.
+3. ALWAYS report orphan inbox entries in the completion response when one or more entries remain unresolved after milestone review, including the orphan count and available next actions: defer (leave them unresolved for now), discard, merge, or promote.
+4. ALWAYS provide a concise summary of changes made in the completion response after completing a phase.
 
 ---
 
@@ -82,14 +94,3 @@ Believed to be true but not yet validated. Track to avoid silent drift.
 
 | Assumption | Impact if Wrong | Validate By |
 | --- | --- | --- |
-
----
-
-## Wrap Protocol `[PERMANENT]`
-
-Run after completing any phase:
-
-1. Copy the completed phase to `PHASE_INBOX.md`, using the phase name as the heading, adding a `Completed:` date, and replacing `Expected Touches:` with `Actual Touches:` for the files or folders changed for reasons unrelated to the expected behavior of the tracking workflow.
-2. Remove the completed phase from `TASKS.md`.
-3. If more work remains, ensure the next phase is present above `Phase Template` and keep working.
-4. If no more work remains, reset `TASKS.md` to its template state: keep all sections marked `[PERMANENT]`.

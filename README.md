@@ -13,7 +13,7 @@ The canonical starting point for AI-assisted projects. Provides the instruction 
 
 ### Workflow tracking
 
-- `TASKS.example.md`: Tracked template for live task tracking. Copy to `TASKS.md` for actual work.
+- `TASKS.example.md`: Tracked template for live task and backlog tracking. Copy to `TASKS.md` for actual work.
 - `PHASE_INBOX.example.md`: Tracked template for the live completed-phase inbox. Copy to `PHASE_INBOX.md` for actual work.
 - `MILESTONES.example.md`: Tracked template for live milestone history. Copy to `MILESTONES.md` for actual work.
 
@@ -40,7 +40,7 @@ The canonical starting point for AI-assisted projects. Provides the instruction 
 1. Copy all tracked files to the new project root.
 2. Fill in `AGENTS.md` with project-specific content.
 3. Create local working copies from the tracked templates: `TASKS.example.md` -> `TASKS.md`, `PHASE_INBOX.example.md` -> `PHASE_INBOX.md`, `MILESTONES.example.md` -> `MILESTONES.md`, and `CONTEXT.example.md` -> `CONTEXT.md`.
-4. In the live `TASKS.md`, set the active project name and replace the placeholder phase with real phases.
+4. In the live `TASKS.md`, set the active project name, keep candidate work in `Backlog`, and replace the placeholder phase with a current phase plus any queued phases.
 5. Use the live tracker files (`TASKS.md`, `PHASE_INBOX.md`, and `MILESTONES.md`) only for work that changes maintained project assets, such as code, documentation, configuration, tests, rules, or workflow. If entries remain unresolved after milestone review, leave them in `PHASE_INBOX.md` as orphan inbox entries and report them in the completion response until you explicitly defer, discard, merge, or promote them.
 
 The live tracker files (`TASKS.md`, `PHASE_INBOX.md`, and `MILESTONES.md`) and local `CONTEXT.md` are intentionally local working state. The tracked `*.example.md` files are the public templates.

@@ -6,15 +6,15 @@
 
 1. ALWAYS read `AGENTS.md` first. Treat it as binding constraints.
 2. ALWAYS assess scope against the request before starting work. If initial assessment reveals the artifact is significantly larger, more broken, or more complex than the request implied — follow the Scope Escalation Protocol in `AGENTS.md` before doing anything else.
-3. ALWAYS check this file for the current active phase, deferred items, open questions, and assumptions.
+3. ALWAYS check this file for the current phase, phase queue, backlog items, deferred items, open questions, and assumptions.
 4. ALWAYS record work that changes maintained project assets as a phase before starting it. See AGENTS.md Boundaries section for exemptions.
 
 ### During the Phase
 
 1. ONLY work within the scope defined in the active project.
-2. NEVER remove any part of a section marked [PERMANENT], including any nested subsections within it.
+2. NEVER remove or alter sections marked `[PERMANENT]` outside the Wrap Protocol. Phase entries under `Phase Queue` are temporary and are removed through the Wrap Protocol.
 3. ALWAYS mark completed items in `Tasks:` as complete. If the result creates durable rationale worth preserving, move that rationale to `CONTEXT.md`.
-4. ALWAYS track any non-trivial validation work required to satisfy the validation requirement in the active phase.
+4. ALWAYS track any non-trivial validation work required to satisfy the validation requirement in the current phase.
 5. ALWAYS check, before treating a phase as complete, whether the phase changed project purpose, setup, usage, workflow, or top-level structure. If so, update `README.md`.
 
 ### After Completing the Phase
@@ -41,14 +41,16 @@
 
 ## Active Project `[PERMANENT]`: [project name]
 
+### Phase Queue
+
 ---
 
 ## Phase Template `[PERMANENT]`
 
-Create real active phases above this section while work is in progress, and remove them only through the Wrap Protocol. Use this shape for each one.
+Create in-progress phases as `####` sections under `### Phase Queue` and above this section while work is in progress, and remove them only through the Wrap Protocol. Use this shape for each one.
 
 ```markdown
-## Phase N — [Phase Name]
+### Phase — [Phase Name]
 
 Delivers: [What this phase produces.]
 
@@ -61,9 +63,18 @@ Tasks:
 
 ---
 
+## Backlog `[PERMANENT]`
+
+Candidate work that is not active yet. Keep this as actionable potential phases, not as decisions.
+
+| Item | Why It Matters | Trigger to Promote |
+| --- | --- | --- |
+
+---
+
 ## Deferred Decisions `[PERMANENT]`
 
-Decisions intentionally postponed and expected to be revisited during upcoming work. Review when planning a phase that could be affected, and before final validation. Do not store settled decisions or historical rationale here.
+Decisions intentionally postponed and expected to be revisited during upcoming work. Review when planning a phase that could be affected, and before final validation. Do not store settled decisions, historical rationale, or backlog items here.
 
 | Decision | Context | Resolve Before |
 | --- | --- | --- |

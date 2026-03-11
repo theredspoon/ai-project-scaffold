@@ -24,6 +24,7 @@ The canonical starting point for AI-assisted projects. Provides the instruction 
 - `.lychee.toml`: Link checker configuration.
 - `.mega-linter.yml`: MegaLinter CI configuration. Enables Vale, markdownlint, and lychee.
 - `.githooks/`: Tracked local Git hooks for fast linting before commit or push.
+- `.vscode/`: Shared VS Code workspace settings and recommended extensions for repo linting.
 - `.github/workflows/lint.yml`: GitHub Actions workflow that runs MegaLinter on push and PRs.
 - `.gitignore`: Excludes local-only override files, live tracker state, local durable context, and Vale sync packages.
 
@@ -65,6 +66,11 @@ Three system-level linters, all installed via Homebrew:
 | [lychee](https://lychee.cli.rs) | Link checking | `brew install lychee` |
 
 After installing, run `vale sync` to pull the Vale style packages (Google, alex, and write-good).
+
+If you use VS Code, this repo also includes workspace settings in `.vscode/`:
+
+- `settings.json` points the Vale extension at this repo's `.vale.ini`.
+- `extensions.json` recommends the Vale and markdownlint extensions for local editing.
 
 ### Enabling local git hooks
 

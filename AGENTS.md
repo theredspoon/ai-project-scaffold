@@ -22,7 +22,7 @@ Always:
 
 - Confirm before any destructive or irreversible action.
 - Read `TASKS.md` before starting any work and follow its execution instructions.
-- Create a phase using the phase template in `TASKS.md` before modifying any maintained project asset (code, documentation, configuration, tests, rules, or workflow), unless only fixing typos, indentation, or renaming without functional change. In `Expected Touches:`, do not include tracking workflow files unless modifying their expected behavior.
+- Create a phase using the phase template in `TASKS.md` before modifying any maintained project asset (code, documentation, configuration, tests, rules, or workflow), unless the work is only lint-only cleanup with no behavior or meaning change, only fixing typos, indentation, or renaming without functional change, or only adding/updating/removing rows in `TASKS.md` tracker-state tables (`Backlog`, `Deferred Decisions`, `Deferred Behaviors`, `Open Questions`, or `Assumptions`) without changing execution instructions or workflow semantics. In `Expected Touches:`, do not include tracking workflow files unless modifying their expected behavior.
 - Mark each checklist item in `Tasks:` complete in `TASKS.md` immediately after completing it. Do not batch tracking updates. Once all items in a phase's `Tasks:` list are complete, treat the phase as complete.
 - Preserve sections marked `[PERMANENT]` in `TASKS.md`; remove phase entries only through the Wrap Protocol.
 - [Add always-do rules.]

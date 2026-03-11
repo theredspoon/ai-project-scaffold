@@ -7,7 +7,7 @@
 1. ALWAYS read `AGENTS.md` first. Treat it as binding constraints.
 2. ALWAYS assess scope against the request before starting work. If initial assessment reveals the artifact is significantly larger, more broken, or more complex than the request implied — follow the Scope Escalation Protocol in `AGENTS.md` before doing anything else.
 3. ALWAYS check this file for the current phase, phase queue, backlog items, deferred items, open questions, and assumptions.
-4. ALWAYS record work that changes maintained project assets as a phase before starting it. See AGENTS.md Boundaries section for exemptions.
+4. ALWAYS record work that changes maintained project assets as a phase before starting it, unless the work is only lint-only cleanup with no behavior or meaning change, or only adding/updating/removing rows in `TASKS.md` tracker-state tables (`Backlog`, `Deferred Decisions`, `Deferred Behaviors`, `Open Questions`, or `Assumptions`) without changing execution instructions or workflow semantics. See AGENTS.md Boundaries section for exemptions.
 
 ### During the Phase
 

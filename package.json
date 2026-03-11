@@ -1,9 +1,0 @@
-{
-  "name": "ai-project-scaffold",
-  "private": true,
-  "description": "Maintenance tooling for the ai-project-scaffold repository.",
-  "packageManager": "bun@1.3.10",
-  "devDependencies": {
-    "markdownlint-cli2": "^0.21.0"
-  }
-}

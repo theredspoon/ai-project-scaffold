@@ -13,3 +13,12 @@ CONTEXT.md
 
 # Local dependency install artifacts
 node_modules/
+
+# Vale sync packages (reinstalled via vale sync)
+styles/Google/
+styles/alex/
+styles/write-good/
+
+# Keep custom styles and vocab
+!styles/Scaffold/
+!styles/config/

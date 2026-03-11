@@ -1,4 +1,5 @@
 {
+  // Shared markdownlint config for CLI and editor integrations.
   "MD013": false,
   "MD024": {
     "siblings_only": true

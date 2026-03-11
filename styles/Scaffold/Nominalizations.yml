@@ -1,0 +1,9 @@
+extends: substitution
+message: "Prefer '%s' over '%s'."
+level: warning
+ignorecase: true
+swap:
+  make a decision: decide
+  makes a decision: decides
+  made a decision: decided
+  making a decision: deciding

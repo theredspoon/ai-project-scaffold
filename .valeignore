@@ -1,0 +1,8 @@
+/styles/**
+/node_modules/**
+**/node_modules/**
+**/.vscode/**
+/TASKS.md
+/PHASE_INBOX.md
+/MILESTONES.md
+/CONTEXT.md

@@ -1,0 +1,10 @@
+extends: existence
+message: "Avoid hedge word '%s'."
+level: warning
+ignorecase: true
+tokens:
+  - very
+  - quite
+  - somewhat
+  - basically
+  - essentially

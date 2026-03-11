@@ -1,0 +1,34 @@
+extends: substitution
+message: "Prefer '%s' over '%s'."
+level: warning
+ignorecase: true
+swap:
+  in order to: to
+  at this point in time: now
+  due to the fact that: because
+  because of the fact that: because
+  in the event that: if
+  provided that: if
+  for the purpose of: to
+  in an effort to: to
+  in regard to: about
+  with respect to: about
+  pertaining to: about
+  with the exception of: except
+  in lieu of: instead of
+  prior to: before
+  at the present time: now
+  at this time: now
+  in the near future: soon
+  until such time as: until
+  in accordance with: per
+  close proximity: near
+  whether or not: whether
+  each and every: each
+  first and foremost: first
+  in many cases: often
+  in some instances: sometimes
+  already existing: existing
+  refer back: refer
+  span across: span
+  the fact that: that

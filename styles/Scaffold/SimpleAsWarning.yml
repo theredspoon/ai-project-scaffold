@@ -1,0 +1,6 @@
+extends: existence
+message: "Consider whether '%s' is doing real technical work or could be replaced with something more precise."
+level: warning
+ignorecase: true
+tokens:
+  - simple

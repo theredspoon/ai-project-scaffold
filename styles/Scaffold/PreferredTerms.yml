@@ -1,0 +1,11 @@
+extends: substitution
+message: "Use '%s' instead of '%s'."
+level: warning
+ignorecase: false
+action:
+  name: replace
+swap:
+  "(?:e-mail|Email|E-mail)": email
+  file name: filename
+  check box: checkbox
+  functionality: capability|feature

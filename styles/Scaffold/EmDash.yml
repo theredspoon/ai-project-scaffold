@@ -1,0 +1,6 @@
+extends: existence
+message: "Avoid em dashes. Use a colon, comma, or period instead."
+level: error
+nonword: true
+tokens:
+  - '\u2014'

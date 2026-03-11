@@ -1,0 +1,9 @@
+extends: substitution
+message: "Prefer '%s' over '%s'."
+level: error
+ignorecase: true
+swap:
+  utilize: use
+  utilized: used
+  utilizing: using
+  utilizes: uses

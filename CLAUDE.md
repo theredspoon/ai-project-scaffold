@@ -1,4 +1,4 @@
-# Claude Code Instructions
+# Claude Code instructions
 
 @AGENTS.md
 @CONVENTIONS.md

@@ -1,8 +1,8 @@
 # Context
 
 > Deep-background companion to `AGENTS.md`.
-> Import in Claude Code sessions with `@CONTEXT.md` when domain depth is needed.
-> Contains background knowledge, rationale, and history — not rules or constraints.
+> Import in Claude Code sessions with `@CONTEXT.md` when you need domain depth.
+> Contains background knowledge, rationale, and history, not rules or constraints.
 
 ---
 
@@ -12,9 +12,9 @@
 
 ---
 
-## Key Decisions
+## Key decisions
 
-[Why the architecture or approach is what it is. What was considered and why alternatives were rejected.]
+[Why the architecture or approach looks like this. Which options the team considered, and why it rejected the alternatives.]
 
 ---
 

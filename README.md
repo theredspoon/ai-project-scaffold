@@ -1,4 +1,4 @@
-# ai-project-scaffold
+# `ai-project-scaffold`
 
 The canonical starting point for AI-assisted projects. Provides the instruction file structure, adapter pattern, and task tracking conventions.
 
@@ -19,10 +19,13 @@ The canonical starting point for AI-assisted projects. Provides the instruction 
 
 ### Linting and local tooling
 
+- `.vale.ini`: Vale prose linter configuration. Custom rules live in `styles/Scaffold/`.
 - `.markdownlint.jsonc`: Shared markdownlint rules for consistent formatting across editors and models.
-- `package.json`: Scaffold-maintenance tooling only. Declares the local `bun`-managed `markdownlint-cli2` dependency for this repo.
-- `bun.lock`: Lockfile for this repo's local scaffold-maintenance tooling.
-- `.gitignore`: Excludes local-only override files, live tracker state, local durable context, and local dependency install artifacts such as `node_modules/`.
+- `.lychee.toml`: Link checker configuration.
+- `.mega-linter.yml`: MegaLinter CI configuration. Enables Vale, markdownlint, and lychee.
+- `.githooks/`: Tracked local Git hooks for fast linting before commit or push.
+- `.github/workflows/lint.yml`: GitHub Actions workflow that runs MegaLinter on push and PRs.
+- `.gitignore`: Excludes local-only override files, live tracker state, local durable context, and Vale sync packages.
 
 ### Local-only override templates
 
@@ -47,21 +50,47 @@ The live tracker files (`TASKS.md`, `PHASE_INBOX.md`, and `MILESTONES.md`) and l
 
 ## Personal overrides
 
-`CLAUDE.local.md` (gitignored) is for machine-specific or personal Claude Code preferences that shouldn't be shared. Create it at the project root as needed.
+`CLAUDE.local.md` (gitignored) stores machine-specific or personal Claude Code preferences. Create it at the project root as needed.
 
-`AGENTS.override.md` (gitignored) is the Codex equivalent. Start from `AGENTS.override.example.md`, rename it to `AGENTS.override.md`, and keep it local. Use it for personal overrides that should not change the shared project rules in `AGENTS.md`.
+`AGENTS.override.md` (gitignored) is the Codex equivalent. Start from `AGENTS.override.example.md`, rename it to `AGENTS.override.md`, and keep it local. Use it for personal overrides that shouldn't change the shared project rules in `AGENTS.md`.
 
-## Local markdown lint CLI
+## Local tooling
 
-This repo itself includes a local `bun` + `markdownlint-cli2` setup for maintaining the scaffold. Run:
+Three system-level linters, all installed via Homebrew:
+
+| Tool | Purpose | Install |
+| --- | --- | --- |
+| [Vale](https://vale.sh) | Prose style | `brew install vale` |
+| [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) | Markdown structure | `brew install markdownlint-cli2` |
+| [lychee](https://lychee.cli.rs) | Link checking | `brew install lychee` |
+
+After installing, run `vale sync` to pull the Vale style packages (Google, alex, and write-good).
+
+### Enabling local git hooks
+
+This scaffold includes tracked hooks in `.githooks/` so copied projects can keep the
+hook logic in version control. Enable them once per clone:
 
 ```bash
-bunx markdownlint-cli2 "*.md" ".github/**/*.md" ".cursor/**/*.md"
+git config core.hooksPath .githooks
+chmod +x .githooks/pre-commit .githooks/pre-push
 ```
 
-Use `bunx` directly here instead of `bun run`, because direct invocation avoids the Homebrew Bash locale warning caused by the inherited `LC_ALL=C.UTF-8` environment in this shell.
+`pre-commit` runs Vale and markdownlint only for staged markdown files.
+`pre-push` runs lychee across the project.
 
-This tooling is for this scaffold repo's own maintenance. It is not part of the scaffold's portable default. When merging these patterns into another project, adopt command-line markdown linting through that project's existing package manager and toolchain instead of copying this setup blindly.
+### Running linters locally
+
+```bash
+vale .
+markdownlint-cli2 .
+lychee .
+```
+
+### CI
+
+MegaLinter runs all three on push to main and on pull requests. Configuration lives in `.mega-linter.yml`.
+Keep CI required in GitHub branch protection because contributors can still skip local hooks with `--no-verify`.
 
 ## Improving a pattern
 
@@ -69,18 +98,18 @@ Update this repo first, then propagate to active projects manually. Keeping this
 
 ## Migrating older projects
 
-For older projects where `CONTEXT.md` was treated as the canonical instruction file:
+For older projects that treated `CONTEXT.md` as the canonical instruction file:
 
 1. Add this scaffold to the project root, or place it in a temporary top-level folder and merge the relevant patterns into the existing repo.
 2. Move the binding rules, operating constraints, and document responsibilities into `AGENTS.md`.
 3. Keep `CONTEXT.md` for durable background only: domain knowledge, rationale, accepted tradeoffs, and historical context.
 4. Update tool-specific adapters to point at `AGENTS.md` as the canonical source of truth.
-5. Keep `.markdownlint.jsonc` as the portable lint contract, but adopt command-line markdown linting through the destination project's existing package manager and toolchain instead of copying this repo's local maintenance setup blindly.
-6. Introduce local `TASKS.md`, `PHASE_INBOX.md`, and `MILESTONES.md` working copies only if the destination project will use the scaffold's phase-tracking workflow.
+5. Keep the lint config files (`.vale.ini`, `.markdownlint.jsonc`, `.lychee.toml`, `.mega-linter.yml`) as portable contracts. Adopt the system-level tools or adapt the CI workflow to the destination project's existing setup.
+6. Introduce local `TASKS.md`, `PHASE_INBOX.md`, and `MILESTONES.md` working copies only when the destination project uses the scaffold's phase-tracking workflow.
 
 ### Reusable migration prompt
 
-Paste this into an LLM after this scaffold has been added to an existing project directory:
+Paste this into a large language model (LLM) after you add this scaffold to an existing project directory:
 
 ```text
 You are helping migrate an existing project to adopt the most relevant patterns from the included `ai-project-scaffold` folder.

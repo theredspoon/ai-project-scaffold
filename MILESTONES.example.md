@@ -2,7 +2,7 @@
 
 Consolidated, outcome-level project history.
 
-Update this file after the Wrap Protocol when the milestone guidance in `AGENTS.md` indicates the newly archived phase, together with any related entries in `PHASE_INBOX.md`, should create or update a milestone. Remove the source inbox entries once their substance has been explicitly resolved here. Do not copy phases verbatim here.
+Update this file after the Wrap Protocol when the milestone guidance in `AGENTS.md` indicates the newly archived phase, together with any related entries in `PHASE_INBOX.md`, should create or update a milestone. Remove the source inbox entries once this file explicitly resolves their substance. Don't copy phases verbatim here.
 
 Use this shape for each milestone.
 

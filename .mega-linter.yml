@@ -5,6 +5,7 @@ ENABLE_LINTERS:
 
 MARKDOWN_MARKDOWNLINT_CONFIG_FILE: .markdownlint.jsonc
 SPELL_VALE_CONFIG_FILE: .vale.ini
+SPELL_VALE_FILTER_REGEX_EXCLUDE: "(styles/|node_modules/|\\.vscode/)"
 
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false

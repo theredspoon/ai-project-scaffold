@@ -82,16 +82,25 @@ git config core.hooksPath .githooks
 chmod +x .githooks/pre-commit .githooks/pre-push
 ```
 
-`pre-commit` runs Vale and markdownlint only for staged markdown files.
+`pre-commit` runs Vale and markdownlint only for staged Markdown files.
 `pre-push` runs lychee across the project.
 
 ### Running linters locally
 
 ```bash
-vale .
+vale --glob='!styles/**' --glob='!.vscode/**' .
 markdownlint-cli2 .
 lychee .
 ```
+
+Vale does not support repo-level ignore files such as `.valeignore`. Filter paths at
+the caller level instead:
+
+- MegaLinter uses `SPELL_VALE_FILTER_REGEX_EXCLUDE` in `.mega-linter.yml`.
+- The tracked `pre-commit` hook limits Vale to staged Markdown paths.
+- Manual CLI runs should pass `--glob` exclusions for any directories you do not
+  want to lint.
+- VS Code's Vale extension has no path-based ignore support and lints opened files.
 
 ### CI
 
